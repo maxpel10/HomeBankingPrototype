@@ -1,6 +1,9 @@
 <html>
     <head>
-      <link rel="stylesheet" href="css/bulma.css"/>
+        <link rel="stylesheet" href="css/bulma.css"/>
+        <script type="text/javascript" src="js/functions.js"></script>
+        <meta charset="UTF-8"/>
+        <title>Supervielle Banco - Login</title>
     </head>
     <body>
       <div class="columns">
@@ -25,16 +28,16 @@
           </nav>
           <nav class="level">
               <div class="control">
-                  <input class="input is-focused" type="text" placeholder="Usuario">
+                  <input id= "user" class="input is-focused" type="text" placeholder="Usuario">
               </div>
           </nav>
           <nav class="level">
               <div class="control">
-                  <input class="input is-focused" type="password" placeholder="Contraseña">
+                  <input id="password" class="input is-focused" type="password" placeholder="Contraseña">
                 </div>
           </nav>
-          <a class="button is-black" href="inicio.html"> Ingresar </a>
-          <nav class="level"></nav>
+          <a class="button is-black" onclick="isUser(document.getElementById('user').value,document.getElementById('password').value)"> Ingresar </a>
+            <nav class="level"></nav>
           <nav class="level">
               <p class="is-size-7">
                 ¿Tenes problemas para ingresar?

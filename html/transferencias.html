@@ -1,0 +1,124 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bulma.css"/>
+    <title>Transferencias</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+
+            <img src="../images/logo.jpg" width="112" height="28">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                </a>
+                <a href="cuenta.html" class="navbar-item">
+                    Cuentas
+                </a>
+                <a href="plazofijo.html" class="navbar-item">
+                    Plazo Fijo
+                </a>
+
+                <a href="transferencias.html" class="navbar-item">
+                    Transferencias
+                </a>
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-danger" href="../index.html">
+                            <strong>Cerrar sesion</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-danger">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Transferencias
+                </h1>
+            </div>
+        </div>
+    </section>
+    <h3 class="is-size-4">Datos de la transferencia</h3>
+    <h1 class="is-size-7">Seleccione la cuenta de débito</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th><abbr>Tipo</abbr></th>
+            <th>Moneda</th>
+            <th>Cuenta</th>
+            <th><abbr>Saldo</abbr></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th><input type="radio" name="accountd" onselect="true" checked></th>
+            <th>Caja de Ahorro</th>
+            <th>$</th>
+            <th>266-45751225-2</th>
+            <th>$ 25,93</th>
+        </tr>
+        <tr>
+            <th><input type="radio" name="accountd"></th>
+            <th>Caja de Ahorro</th>
+            <th>$</th>
+            <th>144-42351225-2</th>
+            <th>$ 200,20</th>
+        </tr>
+        </tbody>
+    </table>
+    <h1 class="is-size-7">Seleccione la cuenta de crédito</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th><abbr>Descripcion</abbr></th>
+            <th>Alias</th>
+            <th>CBU</th>
+            <th><abbr>Moneda</abbr></th>
+            <th>Documento</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th><input type="radio" name="accountc" onselect="true" checked></th>
+            <th>Juan Toranzo</th>
+            <th>PALOMA.DIA.CELULAR</th>
+            <th>1910100455110059724049</th>
+            <th>Pesos</th>
+            <th>20064725395</th>
+            <th>juantoranzo@gmail.com</th>
+        </tr>
+        <tr>
+            <th><input type="radio" name="accountc" onselect="true" checked></th>
+            <th>Jorge Diaz</th>
+            <th>MUSEO.CHACO.VIEJO</th>
+            <th>191010045511005456049</th>
+            <th>Pesos</th>
+            <th>20064745695</th>
+            <th>jdiaz@gmail.com</th>
+        </tr>
+        </tr>
+        </tbody>
+    </table>
+    <a class="button is-danger">Agendar nueva CBU</a>
+    <a class="button is-danger">Siguiente</a>
+
+</body>
+</html>

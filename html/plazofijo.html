@@ -1,0 +1,113 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bulma.css"/>
+    <title>Plazo Fijo</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+
+            <img src="../images/logo.jpg" width="112" height="28">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                </a>
+                <a href="cuenta.html" class="navbar-item">
+                    Cuentas
+                </a>
+                <a href="plazofijo.html" class="navbar-item">
+                    Plazo Fijo
+                </a>
+
+                <a href="transferencias.html" class="navbar-item">
+                    Transferencias
+                </a>
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-danger" href="../index.html">
+                            <strong>Cerrar sesion</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-danger">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Plazo Fijo
+                </h1>
+            </div>
+        </div>
+    </section>
+    <h3 class="is-size-4">Datos de la cuenta</h3>
+    <h1 class="is-size-7">Seleccione la cuenta de débito</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th><abbr>Tipo</abbr></th>
+            <th>Numero</th>
+            <th><abbr>Saldo</abbr></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th><input type="radio" name="account" onselect="true" checked></th>
+            <th>CA en $</th>
+            <th>266-45751225-2</th>
+            <th>$ 25,93</th>
+        </tr>
+        <tr>
+            <th><input type="radio" name="account"></th>
+            <th>CA en $</th>
+            <th>144-42351225-2</th>
+            <th>$ 200,20</th>
+        </tr>
+        </tbody>
+    </table>
+    <h1 class="is-size-7">Detalle de la operación</h1>
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Plazo:</th>
+            <th>Dias: <input type="text"><br>Fecha:<input type="date"></th>
+        </tr>
+        <tr>
+            <th>Importe:</th>
+            <th><input type="text"></th>
+        </tr>
+        <tr>
+            <th>Tasa:</th>
+            <th>38%</th>
+        </tr>
+        <tr>
+            <th>Impuesto al sello:</th>
+            <th>$0,00</th>
+        </tr>
+        </tbody>
+    </table>
+    <h1 class="is-size-7">Seleccione la Instrucción al Vencimiento</h1>
+    <input type="radio" checked>
+    <b class="is-size-7">Cancelar y acreditar al vencimiento</b><br><br>
+    <a class="button is-danger">Calcular</a>
+    <a class="button is-danger">Cancelar</a>
+    <a class="button is-danger">Siguiente</a>
+
+
+
+</body>
+</html>
