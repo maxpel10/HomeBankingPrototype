@@ -1,0 +1,4 @@
+Usuario: user
+Clave: user
+
+Implemente los escenarios de transferencia valida e invalida. El resto del prototipo no tiene funcionalidad
