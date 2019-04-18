@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" href="../css/bulma.css"/>
     <title>Transferencias</title>
+    <script type="text/javascript" src="../js/functions.js"></script>
     <meta charset="UTF-8">
 </head>
 <body>
@@ -67,18 +68,18 @@
         </thead>
         <tbody>
         <tr>
-            <th><input type="radio" name="accountd" onselect="true" checked></th>
+            <th><input type="radio" id="account1" name="accountd" onselect="true" checked></th>
             <th>Caja de Ahorro</th>
             <th>$</th>
             <th>266-45751225-2</th>
-            <th>$ 25,93</th>
+            <th>$ <label id="1"><script>document.getElementById('1').innerHTML = getAccount(1).toString()</script></label></th>
         </tr>
         <tr>
-            <th><input type="radio" name="accountd"></th>
+            <th><input type="radio" id="account2" name="accountd"></th>
             <th>Caja de Ahorro</th>
             <th>$</th>
             <th>144-42351225-2</th>
-            <th>$ 200,20</th>
+            <th>$ <label id="2"><script>document.getElementById('2').innerHTML = getAccount(2).toString()</script></label></th>
         </tr>
         </tbody>
     </table>
@@ -96,29 +97,30 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <th><input type="radio" name="accountc" onselect="true" checked></th>
-            <th>Juan Toranzo</th>
-            <th>PALOMA.DIA.CELULAR</th>
-            <th>1910100455110059724049</th>
-            <th>Pesos</th>
-            <th>20064725395</th>
-            <th>juantoranzo@gmail.com</th>
-        </tr>
-        <tr>
-            <th><input type="radio" name="accountc" onselect="true" checked></th>
-            <th>Jorge Diaz</th>
-            <th>MUSEO.CHACO.VIEJO</th>
-            <th>191010045511005456049</th>
-            <th>Pesos</th>
-            <th>20064745695</th>
-            <th>jdiaz@gmail.com</th>
-        </tr>
-        </tr>
+            <tr>
+                <th><input type="radio" name="accountc" onselect="true" checked></th>
+                <th>Juan Toranzo</th>
+                <th>PALOMA.DIA.CELULAR</th>
+                <th>1910100455110059724049</th>
+                <th>Pesos</th>
+                <th>20064725395</th>
+                <th>juantoranzo@gmail.com</th>
+            </tr>
+            <tr>
+                <th><input type="radio" name="accountc" onselect="true"></th>
+                <th>Jorge Diaz</th>
+                <th>MUSEO.CHACO.VIEJO</th>
+                <th>191010045511005456049</th>
+                <th>Pesos</th>
+                <th>20064745695</th>
+                <th>jdiaz@gmail.com</th>
+            </tr>
         </tbody>
     </table>
+    <h1 class="is-size-7">Detalle de la transferencia</h1>
+    <input id="amount" type="text" placeholder="Importe a transferir">Ingrese el importe anteponiendo "punto" a los decimales<br><br>
     <a class="button is-danger">Agendar nueva CBU</a>
-    <a class="button is-danger">Siguiente</a>
+    <a class="button is-danger" onclick="doTransfer(document.getElementById('amount').value, document.getElementById('account1').checked == true? 1 : 2)">Siguiente</a>
 
 </body>
 </html>

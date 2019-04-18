@@ -2,9 +2,11 @@
 <head>
     <link rel="stylesheet" href="../css/bulma.css"/>
     <title>Plazo Fijo</title>
+    <script type="text/javascript" src="../js/functions.js"></script>
     <meta charset="UTF-8">
 </head>
 <body>
+    <script>console.log(getAccount(1).toString())</script>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
 
@@ -69,13 +71,13 @@
             <th><input type="radio" name="account" onselect="true" checked></th>
             <th>CA en $</th>
             <th>266-45751225-2</th>
-            <th>$ 25,93</th>
+            <th>$ <label id="1"><script>document.getElementById('1').innerHTML = getAccount(1).toString()</script></label></th>
         </tr>
         <tr>
             <th><input type="radio" name="account"></th>
             <th>CA en $</th>
             <th>144-42351225-2</th>
-            <th>$ 200,20</th>
+            <th>$ <label id="2"><script>document.getElementById('2').innerHTML = getAccount(2).toString()</script></label></th>
         </tr>
         </tbody>
     </table>
